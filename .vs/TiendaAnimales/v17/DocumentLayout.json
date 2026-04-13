@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\TiendaAnimales\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|c:\\tiendaanimales\\tiendaanimales\\viewanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|solutionrelative:tiendaanimales\\viewanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|c:\\tiendaanimales\\tiendaanimales\\viewanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|solutionrelative:tiendaanimales\\viewanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|c:\\tiendaanimales\\tiendaanimales\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|solutionrelative:tiendaanimales\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|c:\\tiendaanimales\\tiendaanimales\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{883FF309-3DE3-45AF-8132-CD5AEB818306}|TiendaAnimales\\TiendaAnimales.csproj|solutionrelative:tiendaanimales\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewAnimales.cs",
+              "DocumentMoniker": "C:\\TiendaAnimales\\TiendaAnimales\\ViewAnimales.cs",
+              "RelativeDocumentMoniker": "TiendaAnimales\\ViewAnimales.cs",
+              "ToolTip": "C:\\TiendaAnimales\\TiendaAnimales\\ViewAnimales.cs",
+              "RelativeToolTip": "TiendaAnimales\\ViewAnimales.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:17:48.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewAnimales.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\TiendaAnimales\\TiendaAnimales\\ViewAnimales.cs",
+              "RelativeDocumentMoniker": "TiendaAnimales\\ViewAnimales.cs",
+              "ToolTip": "C:\\TiendaAnimales\\TiendaAnimales\\ViewAnimales.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TiendaAnimales\\ViewAnimales.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:16:18.967Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cs",
+              "DocumentMoniker": "C:\\TiendaAnimales\\TiendaAnimales\\Index.cs",
+              "RelativeDocumentMoniker": "TiendaAnimales\\Index.cs",
+              "ToolTip": "C:\\TiendaAnimales\\TiendaAnimales\\Index.cs",
+              "RelativeToolTip": "TiendaAnimales\\Index.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:16:44.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\TiendaAnimales\\TiendaAnimales\\Index.cs",
+              "RelativeDocumentMoniker": "TiendaAnimales\\Index.cs",
+              "ToolTip": "C:\\TiendaAnimales\\TiendaAnimales\\Index.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TiendaAnimales\\Index.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:59:33.58Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
