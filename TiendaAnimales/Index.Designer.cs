@@ -32,6 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelContenido = new System.Windows.Forms.Panel();
+            this.btnProovedores = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.picMascotas = new System.Windows.Forms.PictureBox();
             this.btnGraficos = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnAdopcion = new System.Windows.Forms.Button();
@@ -40,31 +43,28 @@
             this.btnInicio = new System.Windows.Forms.Button();
             this.lblPanel = new System.Windows.Forms.Label();
             this.panelProductosData = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnTodosProductos = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.reportViewerAnimales = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.reportViewer3 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.reportViewer4 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.picMascotas = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnProovedores = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelContenido.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMascotas)).BeginInit();
             this.panelProductosData.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMascotas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -115,6 +115,36 @@
             this.panelContenido.Size = new System.Drawing.Size(130, 578);
             this.panelContenido.TabIndex = 4;
             // 
+            // btnProovedores
+            // 
+            this.btnProovedores.Location = new System.Drawing.Point(16, 253);
+            this.btnProovedores.Name = "btnProovedores";
+            this.btnProovedores.Size = new System.Drawing.Size(103, 29);
+            this.btnProovedores.TabIndex = 11;
+            this.btnProovedores.Text = "👨‍💼Proovedor";
+            this.btnProovedores.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(16, 288);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(103, 29);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "📤 Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // picMascotas
+            // 
+            this.picMascotas.BackColor = System.Drawing.Color.Transparent;
+            this.picMascotas.Image = global::TiendaAnimales.Properties.Resources.Cachorro_y_gatito_juntos_en_calma2;
+            this.picMascotas.Location = new System.Drawing.Point(3, 458);
+            this.picMascotas.Name = "picMascotas";
+            this.picMascotas.Size = new System.Drawing.Size(127, 120);
+            this.picMascotas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMascotas.TabIndex = 2;
+            this.picMascotas.TabStop = false;
+            // 
             // btnGraficos
             // 
             this.btnGraficos.Location = new System.Drawing.Point(16, 218);
@@ -141,6 +171,7 @@
             this.btnAdopcion.TabIndex = 7;
             this.btnAdopcion.Text = "❤️ Adopcion";
             this.btnAdopcion.UseVisualStyleBackColor = true;
+            this.btnAdopcion.Click += new System.EventHandler(this.btnAdopcion_Click_1);
             // 
             // btnAnimales
             // 
@@ -192,6 +223,16 @@
             this.panelProductosData.Size = new System.Drawing.Size(330, 234);
             this.panelProductosData.TabIndex = 4;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(119, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Productos";
+            // 
             // btnTodosProductos
             // 
             this.btnTodosProductos.Location = new System.Drawing.Point(243, 200);
@@ -220,6 +261,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(330, 234);
             this.panel1.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(128, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Animales";
             // 
             // button1
             // 
@@ -250,6 +301,16 @@
             this.panel2.Size = new System.Drawing.Size(330, 270);
             this.panel2.TabIndex = 6;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(119, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 20);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Adopciones";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(243, 226);
@@ -258,6 +319,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Ver todos";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // reportViewer3
             // 
@@ -278,6 +340,16 @@
             this.panel3.Size = new System.Drawing.Size(330, 270);
             this.panel3.TabIndex = 5;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(128, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Clientes";
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(238, 226);
@@ -295,76 +367,6 @@
             this.reportViewer4.ServerReport.BearerToken = null;
             this.reportViewer4.Size = new System.Drawing.Size(279, 163);
             this.reportViewer4.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(119, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Productos";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(128, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Animales";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(128, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Clientes";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(119, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Adopciones";
-            // 
-            // picMascotas
-            // 
-            this.picMascotas.BackColor = System.Drawing.Color.Transparent;
-            this.picMascotas.Image = global::TiendaAnimales.Properties.Resources.Cachorro_y_gatito_juntos_en_calma2;
-            this.picMascotas.Location = new System.Drawing.Point(3, 458);
-            this.picMascotas.Name = "picMascotas";
-            this.picMascotas.Size = new System.Drawing.Size(127, 120);
-            this.picMascotas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMascotas.TabIndex = 2;
-            this.picMascotas.TabStop = false;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(16, 288);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(103, 29);
-            this.btnSalir.TabIndex = 10;
-            this.btnSalir.Text = "📤 Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnProovedores
-            // 
-            this.btnProovedores.Location = new System.Drawing.Point(16, 253);
-            this.btnProovedores.Name = "btnProovedores";
-            this.btnProovedores.Size = new System.Drawing.Size(103, 29);
-            this.btnProovedores.TabIndex = 11;
-            this.btnProovedores.Text = "👨‍💼Proovedor";
-            this.btnProovedores.UseVisualStyleBackColor = true;
             // 
             // Index
             // 
@@ -384,6 +386,7 @@
             this.panelMenu.ResumeLayout(false);
             this.panelContenido.ResumeLayout(false);
             this.panelContenido.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMascotas)).EndInit();
             this.panelProductosData.ResumeLayout(false);
             this.panelProductosData.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -392,7 +395,6 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMascotas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

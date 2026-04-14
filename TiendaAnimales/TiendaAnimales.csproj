@@ -80,6 +80,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\XmlDataService.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ViewAdopciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdopciones.Designer.cs">
+      <DependentUpon>ViewAdopciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAnimales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,12 +121,15 @@
     <Content Include=".gitignore">
       <SubType>Form</SubType>
     </Content>
-    <Content Include="Service\tablaAdopcionIndex.rdlc">
+    <EmbeddedResource Include="Service\tablaAdopcionIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
     <Content Include="Service\tablaClientesIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="ViewAdopciones.resx">
+      <DependentUpon>ViewAdopciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewAnimales.resx">
       <DependentUpon>ViewAnimales.cs</DependentUpon>
     </EmbeddedResource>

@@ -1865,406 +1865,459 @@
 	</Clientes>
 
 	<Adopciones>
-		<!-- Lógica: cada adopción vincula un cliente con un animal; fecha posterior a FechaIngreso -->
 		<Adopcion>
 			<Id>1</Id>
 			<AnimalId>1</AnimalId>
 			<ClienteId>1</ClienteId>
+			<FechaSolicitud>2024-02-08</FechaSolicitud>
 			<FechaAdopcion>2024-02-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Adopción registrada y seguimiento realizado.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>2</Id>
 			<AnimalId>2</AnimalId>
 			<ClienteId>2</ClienteId>
+			<FechaSolicitud>2024-02-23</FechaSolicitud>
 			<FechaAdopcion>2024-03-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con experiencia previa.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>3</Id>
 			<AnimalId>3</AnimalId>
 			<ClienteId>3</ClienteId>
+			<FechaSolicitud>2024-03-13</FechaSolicitud>
 			<FechaAdopcion>2024-03-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Recomendado seguimiento veterinario en 2 semanas.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>4</Id>
 			<AnimalId>4</AnimalId>
 			<ClienteId>4</ClienteId>
+			<FechaSolicitud>2024-04-13</FechaSolicitud>
 			<FechaAdopcion>2024-04-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con jaula adecuada para aves.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>5</Id>
 			<AnimalId>5</AnimalId>
 			<ClienteId>5</ClienteId>
+			<FechaSolicitud>2024-04-28</FechaSolicitud>
 			<FechaAdopcion>2024-05-05</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Alérgia leve: dieta recomendada.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>6</Id>
 			<AnimalId>6</AnimalId>
 			<ClienteId>6</ClienteId>
+			<FechaSolicitud>2024-05-13</FechaSolicitud>
 			<FechaAdopcion>2024-05-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente programó cita veterinaria inicial.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>7</Id>
 			<AnimalId>7</AnimalId>
 			<ClienteId>7</ClienteId>
+			<FechaSolicitud>2023-11-24</FechaSolicitud>
 			<FechaAdopcion>2023-12-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Buen historial y referencias.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>8</Id>
 			<AnimalId>8</AnimalId>
 			<ClienteId>8</ClienteId>
+			<FechaSolicitud>2024-02-08</FechaSolicitud>
 			<FechaAdopcion>2024-02-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Incluye contrato de adopción.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>9</Id>
 			<AnimalId>9</AnimalId>
 			<ClienteId>9</ClienteId>
+			<FechaSolicitud>2024-06-03</FechaSolicitud>
 			<FechaAdopcion>2024-06-10</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Recomendado seguimiento de crecimiento.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>10</Id>
 			<AnimalId>10</AnimalId>
 			<ClienteId>10</ClienteId>
+			<FechaSolicitud>2023-10-25</FechaSolicitud>
 			<FechaAdopcion>2023-11-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Adoptado por familia con experiencia.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
+
 		<Adopcion>
 			<Id>11</Id>
 			<AnimalId>11</AnimalId>
 			<ClienteId>11</ClienteId>
+			<FechaSolicitud>2023-12-29</FechaSolicitud>
 			<FechaAdopcion>2024-01-05</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente solicita info sobre dieta.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>12</Id>
 			<AnimalId>12</AnimalId>
 			<ClienteId>12</ClienteId>
+			<FechaSolicitud>2024-06-13</FechaSolicitud>
 			<FechaAdopcion>2024-06-20</FechaAdopcion>
 			<Estado>Pendiente</Estado>
-			<Observaciones>Revisión pre-adopción programada.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>13</Id>
 			<AnimalId>13</AnimalId>
 			<ClienteId>13</ClienteId>
+			<FechaSolicitud>2024-03-25</FechaSolicitud>
 			<FechaAdopcion>2024-04-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Good match for home.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>14</Id>
 			<AnimalId>14</AnimalId>
 			<ClienteId>14</ClienteId>
+			<FechaSolicitud>2023-10-23</FechaSolicitud>
 			<FechaAdopcion>2023-10-30</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Seguimiento por artritis.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>15</Id>
 			<AnimalId>15</AnimalId>
 			<ClienteId>15</ClienteId>
+			<FechaSolicitud>2024-03-03</FechaSolicitud>
 			<FechaAdopcion>2024-03-10</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con jaula apropiada.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>16</Id>
 			<AnimalId>16</AnimalId>
 			<ClienteId>16</ClienteId>
+			<FechaSolicitud>2024-01-25</FechaSolicitud>
 			<FechaAdopcion>2024-02-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Familia activa, buen entorno para perro.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>17</Id>
 			<AnimalId>17</AnimalId>
 			<ClienteId>17</ClienteId>
+			<FechaSolicitud>2023-08-25</FechaSolicitud>
 			<FechaAdopcion>2023-09-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Buena experiencia con gatos.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>18</Id>
 			<AnimalId>18</AnimalId>
 			<ClienteId>18</ClienteId>
+			<FechaSolicitud>2024-04-03</FechaSolicitud>
 			<FechaAdopcion>2024-04-10</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Tratamiento completado antes de adopción.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>19</Id>
 			<AnimalId>19</AnimalId>
 			<ClienteId>19</ClienteId>
+			<FechaSolicitud>2024-02-27</FechaSolicitud>
 			<FechaAdopcion>2024-03-05</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con jaula y cuidados apropiados.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>20</Id>
 			<AnimalId>20</AnimalId>
 			<ClienteId>20</ClienteId>
+			<FechaSolicitud>2024-05-25</FechaSolicitud>
 			<FechaAdopcion>2024-06-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Buen ambiente familiar.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
+
 		<Adopcion>
 			<Id>21</Id>
 			<AnimalId>21</AnimalId>
 			<ClienteId>21</ClienteId>
+			<FechaSolicitud>2024-06-05</FechaSolicitud>
 			<FechaAdopcion>2024-06-12</FechaAdopcion>
 			<Estado>Pendiente</Estado>
-			<Observaciones>Visita domiciliaria pendiente.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>22</Id>
 			<AnimalId>22</AnimalId>
 			<ClienteId>22</ClienteId>
+			<FechaSolicitud>2023-08-13</FechaSolicitud>
 			<FechaAdopcion>2023-08-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con amplio espacio exterior.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>23</Id>
 			<AnimalId>23</AnimalId>
 			<ClienteId>23</ClienteId>
+			<FechaSolicitud>2024-05-26</FechaSolicitud>
 			<FechaAdopcion>2024-06-02</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Recomendado control de dieta.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>24</Id>
 			<AnimalId>24</AnimalId>
 			<ClienteId>24</ClienteId>
+			<FechaSolicitud>2023-11-13</FechaSolicitud>
 			<FechaAdopcion>2023-11-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con experiencia felina.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>25</Id>
 			<AnimalId>25</AnimalId>
 			<ClienteId>25</ClienteId>
+			<FechaSolicitud>2024-01-13</FechaSolicitud>
 			<FechaAdopcion>2024-01-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Buen entorno y seguimiento programado.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>26</Id>
 			<AnimalId>26</AnimalId>
 			<ClienteId>26</ClienteId>
+			<FechaSolicitud>2022-06-08</FechaSolicitud>
 			<FechaAdopcion>2022-06-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Adopción a largo plazo.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>27</Id>
 			<AnimalId>27</AnimalId>
 			<ClienteId>27</ClienteId>
+			<FechaSolicitud>2024-03-29</FechaSolicitud>
 			<FechaAdopcion>2024-04-05</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente joven con experiencia.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>28</Id>
 			<AnimalId>28</AnimalId>
 			<ClienteId>28</ClienteId>
+			<FechaSolicitud>2023-09-18</FechaSolicitud>
 			<FechaAdopcion>2023-09-25</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Recomendado plan de ejercicio.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>29</Id>
 			<AnimalId>29</AnimalId>
 			<ClienteId>29</ClienteId>
+			<FechaSolicitud>2024-04-24</FechaSolicitud>
 			<FechaAdopcion>2024-05-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Jaula adecuada y dieta balanceada.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>30</Id>
 			<AnimalId>30</AnimalId>
 			<ClienteId>30</ClienteId>
+			<FechaSolicitud>2023-11-28</FechaSolicitud>
 			<FechaAdopcion>2023-12-05</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Contacto regular para seguimiento.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
+
 		<Adopcion>
 			<Id>31</Id>
 			<AnimalId>31</AnimalId>
 			<ClienteId>31</ClienteId>
+			<FechaSolicitud>2024-02-23</FechaSolicitud>
 			<FechaAdopcion>2024-03-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Familia con niños, recomendaciones dadas.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>32</Id>
 			<AnimalId>32</AnimalId>
 			<ClienteId>32</ClienteId>
+			<FechaSolicitud>2024-06-18</FechaSolicitud>
 			<FechaAdopcion>2024-06-25</FechaAdopcion>
 			<Estado>Pendiente</Estado>
-			<Observaciones>Revisión veterinaria pendiente tras adopción.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>33</Id>
 			<AnimalId>33</AnimalId>
 			<ClienteId>33</ClienteId>
+			<FechaSolicitud>2023-06-13</FechaSolicitud>
 			<FechaAdopcion>2023-06-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Adopción establecida hace tiempo.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>34</Id>
 			<AnimalId>34</AnimalId>
 			<ClienteId>34</ClienteId>
+			<FechaSolicitud>2024-05-23</FechaSolicitud>
 			<FechaAdopcion>2024-05-30</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con espacio exterior seguro.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>35</Id>
 			<AnimalId>35</AnimalId>
 			<ClienteId>35</ClienteId>
+			<FechaSolicitud>2023-10-03</FechaSolicitud>
 			<FechaAdopcion>2023-10-10</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Seguimiento regular.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>36</Id>
 			<AnimalId>36</AnimalId>
 			<ClienteId>36</ClienteId>
+			<FechaSolicitud>2024-04-24</FechaSolicitud>
 			<FechaAdopcion>2024-05-01</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con horario flexible para paseos.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>37</Id>
 			<AnimalId>37</AnimalId>
 			<ClienteId>37</ClienteId>
+			<FechaSolicitud>2024-02-03</FechaSolicitud>
 			<FechaAdopcion>2024-02-10</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Recomendado plan de castración si procede.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>38</Id>
 			<AnimalId>38</AnimalId>
 			<ClienteId>38</ClienteId>
+			<FechaSolicitud>2023-12-13</FechaSolicitud>
 			<FechaAdopcion>2023-12-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Buen match de comportamiento.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>39</Id>
 			<AnimalId>39</AnimalId>
 			<ClienteId>39</ClienteId>
+			<FechaSolicitud>2024-03-18</FechaSolicitud>
 			<FechaAdopcion>2024-03-25</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con experiencia en roedores.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>40</Id>
 			<AnimalId>40</AnimalId>
 			<ClienteId>40</ClienteId>
+			<FechaSolicitud>2023-05-13</FechaSolicitud>
 			<FechaAdopcion>2023-05-20</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Adopción estable con seguimiento.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
+
 		<Adopcion>
 			<Id>41</Id>
 			<AnimalId>41</AnimalId>
 			<ClienteId>41</ClienteId>
+			<FechaSolicitud>2023-12-08</FechaSolicitud>
 			<FechaAdopcion>2023-12-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Buen entorno urbano con parque cercano.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>42</Id>
 			<AnimalId>42</AnimalId>
 			<ClienteId>42</ClienteId>
+			<FechaSolicitud>2024-03-04</FechaSolicitud>
 			<FechaAdopcion>2024-03-11</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con experiencia en aves.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>43</Id>
 			<AnimalId>43</AnimalId>
 			<ClienteId>43</ClienteId>
+			<FechaSolicitud>2023-10-29</FechaSolicitud>
 			<FechaAdopcion>2023-11-05</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Contraseña de seguimiento enviada.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>44</Id>
 			<AnimalId>44</AnimalId>
 			<ClienteId>44</ClienteId>
+			<FechaSolicitud>2024-06-13</FechaSolicitud>
 			<FechaAdopcion>2024-06-20</FechaAdopcion>
 			<Estado>Pendiente</Estado>
-			<Observaciones>Revisión pre-adopción programada.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>45</Id>
 			<AnimalId>45</AnimalId>
 			<ClienteId>45</ClienteId>
+			<FechaSolicitud>2023-09-08</FechaSolicitud>
 			<FechaAdopcion>2023-09-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Seguimiento de comportamiento aplicado.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>46</Id>
 			<AnimalId>46</AnimalId>
 			<ClienteId>46</ClienteId>
+			<FechaSolicitud>2023-11-08</FechaSolicitud>
 			<FechaAdopcion>2023-11-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con referencias.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>47</Id>
 			<AnimalId>47</AnimalId>
 			<ClienteId>47</ClienteId>
+			<FechaSolicitud>2024-06-23</FechaSolicitud>
 			<FechaAdopcion>2024-06-30</FechaAdopcion>
 			<Estado>Pendiente</Estado>
-			<Observaciones>Visita domiciliaria requerida.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>48</Id>
 			<AnimalId>48</AnimalId>
 			<ClienteId>48</ClienteId>
+			<FechaSolicitud>2022-12-08</FechaSolicitud>
 			<FechaAdopcion>2022-12-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Adopción a largo plazo y seguimiento.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>49</Id>
 			<AnimalId>49</AnimalId>
 			<ClienteId>49</ClienteId>
+			<FechaSolicitud>2024-05-08</FechaSolicitud>
 			<FechaAdopcion>2024-05-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Cliente con experiencia en gatos.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 		<Adopcion>
 			<Id>50</Id>
 			<AnimalId>50</AnimalId>
 			<ClienteId>50</ClienteId>
+			<FechaSolicitud>2023-10-08</FechaSolicitud>
 			<FechaAdopcion>2023-10-15</FechaAdopcion>
 			<Estado>Completada</Estado>
-			<Observaciones>Adoptado y seguimiento inicial realizado.</Observaciones>
+			<CosteTramite>50.00</CosteTramite>
 		</Adopcion>
 	</Adopciones>
 </DatosTienda>
