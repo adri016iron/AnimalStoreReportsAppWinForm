@@ -97,6 +97,42 @@ namespace TiendaAnimales
             reportViewerFiltrado.RefreshReport();
         }
 
+        private void AplicarFiltroCombo()
+        {
+            if (datosCargados == null || datosCargados.Productos == null)
+                return;
+
+            int idProovedor = 0;
+
+            if (cmbProovedores.SelectedValue != null)
+            {
+                int.TryParse(cmbProovedores.SelectedValue.ToString(), out idProovedor);
+            }
+
+            var productosFiltrados = datosCargados.Productos
+                .Where(p => idProovedor == 0 || p.ProovedorId == idProovedor)
+                .ToList();
+
+            CargarReporteFiltrado(productosFiltrados);
+        }
+
+        private void AplicarFiltroTexto()
+        {
+            if (datosCargados == null || datosCargados.Productos == null)
+                return;
+
+            string filtroNombre = textBox1.Text.Trim().ToLower();
+
+            var productosFiltrados = datosCargados.Productos
+                .Where(p =>
+                    string.IsNullOrEmpty(filtroNombre) ||
+                    (p.Nombre != null && p.Nombre.ToLower().Contains(filtroNombre))
+                )
+                .ToList();
+
+            CargarReporteGeneral(productosFiltrados);
+        }
+
         private void btnProductos_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
@@ -121,26 +157,12 @@ namespace TiendaAnimales
 
         private void cmbProovedores_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            if (cmbProovedores.SelectedValue == null || datosCargados == null)
-                return;
+            AplicarFiltroCombo();
+        }
 
-            int idProovedor;
-
-            if (!int.TryParse(cmbProovedores.SelectedValue.ToString(), out idProovedor))
-                return;
-
-            if (idProovedor == 0)
-            {
-                CargarReporteFiltrado(datosCargados.Productos);
-            }
-            else
-            {
-                var productosFiltrados = datosCargados.Productos
-                    .Where(p => p.ProovedorId == idProovedor)
-                    .ToList();
-
-                CargarReporteFiltrado(productosFiltrados);
-            }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            AplicarFiltroTexto();
         }
     }
 

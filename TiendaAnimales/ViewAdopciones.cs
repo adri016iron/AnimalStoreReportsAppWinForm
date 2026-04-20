@@ -13,7 +13,8 @@ namespace TiendaAnimales
     {
         private DatosTienda datos;
         private string rutaInformeAdopcion;
-        private bool cargandoCombo = false;
+        private bool cargandoComboClientes = false;
+        private bool cargandoComboAnimales = false;
         private List<AdopcionAnimalView> listaCompleta;
 
         public ViewAdopciones()
@@ -31,8 +32,9 @@ namespace TiendaAnimales
                 XmlDataService service = new XmlDataService();
                 datos = service.CargarDatos(rutaXml);
 
-                CargarClientesEnCombo();
                 ConstruirListaCompleta();
+                CargarClientesEnCombo();
+                CargarAnimalesEnCombo();
                 CargarInforme(listaCompleta);
             }
             catch (Exception ex)
@@ -48,7 +50,7 @@ namespace TiendaAnimales
 
         private void CargarClientesEnCombo()
         {
-            cargandoCombo = true;
+            cargandoComboClientes = true;
 
             List<ClienteCombo> clientes = datos.Clientes
                 .Select(c => new ClienteCombo
@@ -71,7 +73,35 @@ namespace TiendaAnimales
             comboBox1.DataSource = clientes;
             comboBox1.SelectedIndex = 0;
 
-            cargandoCombo = false;
+            cargandoComboClientes = false;
+        }
+
+        private void CargarAnimalesEnCombo()
+        {
+            cargandoComboAnimales = true;
+
+            List<AnimalCombo> animales = datos.Animales
+                .Select(a => new AnimalCombo
+                {
+                    Id = a.Id,
+                    Nombre = a.Nombre
+                })
+                .OrderBy(a => a.Nombre)
+                .ToList();
+
+            animales.Insert(0, new AnimalCombo
+            {
+                Id = 0,
+                Nombre = "Todos los animales"
+            });
+
+            comboBox2.DataSource = null;
+            comboBox2.DisplayMember = "Nombre";
+            comboBox2.ValueMember = "Id";
+            comboBox2.DataSource = animales;
+            comboBox2.SelectedIndex = 0;
+
+            cargandoComboAnimales = false;
         }
 
         private void ConstruirListaCompleta()
@@ -107,32 +137,31 @@ namespace TiendaAnimales
             reportViewer1.RefreshReport();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void AplicarFiltros()
         {
             try
             {
-                if (cargandoCombo)
+                if (listaCompleta == null)
                     return;
 
-                if (comboBox1.SelectedItem == null)
-                    return;
+                int idCliente = 0;
+                int idAnimal = 0;
 
                 ClienteCombo clienteSeleccionado = comboBox1.SelectedItem as ClienteCombo;
-                if (clienteSeleccionado == null)
-                    return;
+                AnimalCombo animalSeleccionado = comboBox2.SelectedItem as AnimalCombo;
 
-                List<AdopcionAnimalView> listaFiltrada;
+                if (clienteSeleccionado != null)
+                    idCliente = clienteSeleccionado.Id;
 
-                if (clienteSeleccionado.Id == 0)
-                {
-                    listaFiltrada = listaCompleta;
-                }
-                else
-                {
-                    listaFiltrada = listaCompleta
-                        .Where(a => a.IdCliente == clienteSeleccionado.Id)
-                        .ToList();
-                }
+                if (animalSeleccionado != null)
+                    idAnimal = animalSeleccionado.Id;
+
+                List<AdopcionAnimalView> listaFiltrada = listaCompleta
+                    .Where(a =>
+                        (idCliente == 0 || a.IdCliente == idCliente) &&
+                        (idAnimal == 0 || a.IdAnimal == idAnimal)
+                    )
+                    .ToList();
 
                 CargarInforme(listaFiltrada);
             }
@@ -147,6 +176,22 @@ namespace TiendaAnimales
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cargandoComboClientes)
+                return;
+
+            AplicarFiltros();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cargandoComboAnimales)
+                return;
+
+            AplicarFiltros();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -157,6 +202,12 @@ namespace TiendaAnimales
     {
         public int Id { get; set; }
         public string NombreCompleto { get; set; }
+    }
+
+    public class AnimalCombo
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
     }
 
     public class AdopcionAnimalView

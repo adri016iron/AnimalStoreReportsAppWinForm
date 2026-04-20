@@ -40,6 +40,8 @@
             this.picMascotas = new System.Windows.Forms.PictureBox();
             this.lblPanel = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelContenido.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -48,6 +50,8 @@
             // 
             // panelContenido
             // 
+            this.panelContenido.Controls.Add(this.textBox1);
+            this.panelContenido.Controls.Add(this.label3);
             this.panelContenido.Controls.Add(this.label2);
             this.panelContenido.Controls.Add(this.cmbProovedores);
             this.panelContenido.Controls.Add(this.reportViewerFiltrado);
@@ -101,10 +105,10 @@
             // reportViewerG
             // 
             this.reportViewerG.LocalReport.ReportEmbeddedResource = "TiendaAnimales.Service.tablaProductosIndex.rdlc";
-            this.reportViewerG.Location = new System.Drawing.Point(163, 67);
+            this.reportViewerG.Location = new System.Drawing.Point(163, 85);
             this.reportViewerG.Name = "reportViewerG";
             this.reportViewerG.ServerReport.BearerToken = null;
-            this.reportViewerG.Size = new System.Drawing.Size(416, 550);
+            this.reportViewerG.Size = new System.Drawing.Size(416, 532);
             this.reportViewerG.TabIndex = 7;
             // 
             // panelMenu
@@ -170,6 +174,23 @@
             this.lblTitulo.TabIndex = 4;
             this.lblTitulo.Text = "Productos a la venta en la tienda";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(149, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Filtrar por nombre de producto";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(300, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(213, 20);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // ViewProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,5 +224,7 @@
         private System.Windows.Forms.ComboBox cmbProovedores;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewerFiltrado;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
