@@ -1,0 +1,93 @@
+﻿using Microsoft.Reporting.WinForms;
+using System;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
+using TiendaAnimales.Entity;
+using TiendaAnimales.Service;
+
+namespace TiendaAnimales
+{
+    public partial class ViewProovedores : Form
+    {
+        public ViewProovedores()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ViewProovedores_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                string rutaXml = Path.Combine(Application.StartupPath, "Data", "DatosTienda.xml");
+                string rutaInforme1 = Path.Combine(Application.StartupPath, "Service", "tablaProovedores.rdlc");
+                string rutaInforme2 = Path.Combine(Application.StartupPath, "Service", "tablaProovedoresProductos.rdlc");
+
+                if (!File.Exists(rutaXml))
+                    throw new FileNotFoundException("No se encontró el archivo XML de datos.", rutaXml);
+
+                if (!File.Exists(rutaInforme1))
+                    throw new FileNotFoundException("No se encontró el informe de proveedores.", rutaInforme1);
+
+                if (!File.Exists(rutaInforme2))
+                    throw new FileNotFoundException("No se encontró el informe de proveedores y productos.", rutaInforme2);
+
+                XmlDataService service = new XmlDataService();
+                DatosTienda datos = service.CargarDatos(rutaXml);
+
+                if (datos == null)
+                    throw new Exception("No se pudieron cargar los datos de la tienda.");
+
+                if (datos.Proovedores == null)
+                    throw new Exception("La lista de proveedores es nula.");
+
+                if (datos.Productos == null)
+                    throw new Exception("La lista de productos es nula.");
+
+                // Primer reportviewer: solo proveedores
+                reportViewer1.LocalReport.ReportPath = rutaInforme1;
+                reportViewer1.LocalReport.DataSources.Clear();
+                reportViewer1.LocalReport.DataSources.Add(
+                    new ReportDataSource("DataSetProovedor", datos.Proovedores)
+                );
+                reportViewer1.RefreshReport();
+
+                // Segundo reportviewer: proveedor + productos relacionados
+                var proveedorProductoLista = (
+                    from proveedor in datos.Proovedores
+                    join producto in datos.Productos
+                        on proveedor.Id equals producto.ProovedorId
+                    select new ProovedorProductoView
+                    {
+                        NombreProveedor = proveedor.Nombre,
+                        NombreProducto = producto.Nombre,
+                        Marca = producto.Marca,
+                        Precio = producto.Precio,
+                        Stock = producto.Stock
+                    }
+                ).ToList();
+
+                reportViewer2.LocalReport.ReportPath = rutaInforme2;
+                reportViewer2.LocalReport.DataSources.Clear();
+                reportViewer2.LocalReport.DataSources.Add(
+                    new ReportDataSource("DataSetProoveedorProducto", proveedorProductoLista)
+                );
+                reportViewer2.RefreshReport();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al cargar el informe: " + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+        }
+    }
+}

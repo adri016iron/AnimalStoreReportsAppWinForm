@@ -196,5 +196,17 @@ namespace TiendaAnimales
             ViewAdopciones view = new ViewAdopciones();
             view.Show();
         }
+
+        private void btnClientes_Click_1(object sender, EventArgs e)
+        {
+            ViewClientes view = new ViewClientes();
+            view.Show();
+        }
+
+        private void btnProovedores_Click(object sender, EventArgs e)
+        {
+            ViewProovedores view = new ViewProovedores();
+            view.Show();
+        }
     }
 }

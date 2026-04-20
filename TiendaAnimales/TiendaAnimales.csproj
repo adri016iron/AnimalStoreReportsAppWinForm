@@ -70,6 +70,7 @@
     <Compile Include="Entity\DatosTienda.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proovedor.cs" />
+    <Compile Include="Entity\ProovedorProductoView.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +93,23 @@
     <Compile Include="ViewAnimales.Designer.cs">
       <DependentUpon>ViewAnimales.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClientes.Designer.cs">
+      <DependentUpon>ViewClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewProductos.Designer.cs">
       <DependentUpon>ViewProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProovedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProovedores.Designer.cs">
+      <DependentUpon>ViewProovedores.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
@@ -124,7 +137,13 @@
     <EmbeddedResource Include="Service\tablaAdopcionIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <Content Include="Service\tablaClientesIndex.rdlc">
+    <EmbeddedResource Include="Service\tablaClientesIndex.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Service\tablaProovedores.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Service\tablaProovedoresProductos.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="ViewAdopciones.resx">
@@ -133,14 +152,22 @@
     <EmbeddedResource Include="ViewAnimales.resx">
       <DependentUpon>ViewAnimales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewClientes.resx">
+      <DependentUpon>ViewClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewProductos.resx">
       <DependentUpon>ViewProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProovedores.resx">
+      <DependentUpon>ViewProovedores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\TiendaAnimales.Entity.Adopcion.datasource" />
     <None Include="Properties\DataSources\TiendaAnimales.Entity.Animal.datasource" />
     <None Include="Properties\DataSources\TiendaAnimales.Entity.Cliente.datasource" />
     <None Include="Properties\DataSources\TiendaAnimales.Entity.Producto.datasource" />
+    <None Include="Properties\DataSources\TiendaAnimales.Entity.Proovedor.datasource" />
+    <None Include="Properties\DataSources\TiendaAnimales.Entity.ProovedorProductoView.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

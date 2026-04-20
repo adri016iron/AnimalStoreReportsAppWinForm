@@ -123,6 +123,7 @@
             this.btnProovedores.TabIndex = 11;
             this.btnProovedores.Text = "👨‍💼Proovedor";
             this.btnProovedores.UseVisualStyleBackColor = true;
+            this.btnProovedores.Click += new System.EventHandler(this.btnProovedores_Click);
             // 
             // btnSalir
             // 
@@ -162,6 +163,7 @@
             this.btnClientes.TabIndex = 8;
             this.btnClientes.Text = "👤 Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click_1);
             // 
             // btnAdopcion
             // 
