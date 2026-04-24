@@ -71,6 +71,36 @@
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proovedor.cs" />
     <Compile Include="Entity\ProovedorProductoView.cs" />
+    <Compile Include="GraficoAnimales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoAnimales.Designer.cs">
+      <DependentUpon>GraficoAnimales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graficos.Designer.cs">
+      <DependentUpon>Graficos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficosAnimales2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficosAnimales2.Designer.cs">
+      <DependentUpon>GraficosAnimales2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficosClientes.Designer.cs">
+      <DependentUpon>GraficosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficosProductos.Designer.cs">
+      <DependentUpon>GraficosProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +141,21 @@
     <Compile Include="ViewProovedores.Designer.cs">
       <DependentUpon>ViewProovedores.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GraficoAnimales.resx">
+      <DependentUpon>GraficoAnimales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graficos.resx">
+      <DependentUpon>Graficos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficosAnimales2.resx">
+      <DependentUpon>GraficosAnimales2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficosClientes.resx">
+      <DependentUpon>GraficosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficosProductos.resx">
+      <DependentUpon>GraficosProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +169,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Content Include="Service\ReporGraficos1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Service\reportGraficosProductos.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Service\reporteGraficoClientes.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Service\reporteGraficoAnimalEdad.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Service\tablaProductosIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>

@@ -1,0 +1,58 @@
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using TiendaAnimales.Entity;
+
+namespace TiendaAnimales
+{
+    public partial class Graficos : Form
+    {
+        private DatosTienda datos;
+
+        public Graficos(DatosTienda datos)
+        {
+            InitializeComponent();
+            this.datos = datos;
+        }
+
+        private void Graficos_Load(object sender, EventArgs e)
+        {
+            DibujarAnimalesPorTipo();
+        }
+
+        private void DibujarAnimalesPorTipo()
+        {
+            chart1.Series.Clear();
+            chart1.Titles.Clear();
+            chart1.ChartAreas.Clear();
+
+            chart1.ChartAreas.Add(new ChartArea("AreaPrincipal"));
+            chart1.Titles.Add("Animales por especie");
+
+            Series serie = new Series("Animales");
+            serie.ChartType = SeriesChartType.Column;
+            serie.IsValueShownAsLabel = true;
+
+            var grupos = datos.Animales
+                .GroupBy(a => a.Especie)
+                .Select(g => new
+                {
+                    Especie = g.Key,
+                    Cantidad = g.Count()
+                });
+
+            foreach (var item in grupos)
+            {
+                serie.Points.AddXY(item.Especie, item.Cantidad);
+            }
+
+            chart1.Series.Add(serie);
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

@@ -32,6 +32,9 @@
             <TablixColumn>
               <Width>2.5cm</Width>
             </TablixColumn>
+            <TablixColumn>
+              <Width>4.51083cm</Width>
+            </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
@@ -307,6 +310,36 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Listo para adopción</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
             <TablixRow>
@@ -411,7 +444,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Vacunado.Value</Value>
+                              <Value>=IIF(Fields!Vacunado.Value = True, "Si", "No")</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -501,7 +534,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!DisponibleAdopcion.Value</Value>
+                              <Value>=IIF(Fields!DisponibleAdopcion.Value, "✔", "❌")</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -531,7 +564,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Esterilizado.Value</Value>
+                              <Value>=IIF(Fields!Esterilizado.Value = True, "Si", "No")</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -582,12 +615,53 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=IIF(
+    NOT IsNothing(Fields!DisponibleAdopcion.Value) AND
+    NOT IsNothing(Fields!Esterilizado.Value) AND
+    NOT IsNothing(Fields!Vacunado.Value) AND
+    Fields!DisponibleAdopcion.Value AND
+    Fields!Esterilizado.Value AND
+    Fields!Vacunado.Value,
+    "Listo para adopción",
+    "No listo"
+)</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox4</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <rd:Selected>true</rd:Selected>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
           </TablixRows>
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
+            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -611,7 +685,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetAnimales</DataSetName>
         <Height>1.90229cm</Height>
-        <Width>19.28354cm</Width>
+        <Width>23.79438cm</Width>
         <Style>
           <Border>
             <Style>None</Style>

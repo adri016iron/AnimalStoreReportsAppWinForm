@@ -208,5 +208,11 @@ namespace TiendaAnimales
             ViewProovedores view = new ViewProovedores();
             view.Show();
         }
+
+        private void btnGraficos_Click_1(object sender, EventArgs e)
+        {
+            Graficos view = new Graficos();
+            view.Show();
+        }
     }
 }

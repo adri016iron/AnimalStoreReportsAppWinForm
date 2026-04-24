@@ -154,6 +154,7 @@
             this.btnGraficos.TabIndex = 9;
             this.btnGraficos.Text = "📊 Gráficos";
             this.btnGraficos.UseVisualStyleBackColor = true;
+            this.btnGraficos.Click += new System.EventHandler(this.btnGraficos_Click_1);
             // 
             // btnClientes
             // 
