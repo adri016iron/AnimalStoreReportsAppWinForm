@@ -71,92 +71,137 @@
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proovedor.cs" />
     <Compile Include="Entity\ProovedorProductoView.cs" />
-    <Compile Include="GraficoAnimales.cs">
+    <Compile Include="Views\GraficoAnimales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GraficoAnimales.Designer.cs">
+    <Compile Include="Views\GraficoAnimales.Designer.cs">
       <DependentUpon>GraficoAnimales.cs</DependentUpon>
     </Compile>
-    <Compile Include="Graficos.cs">
+    <Compile Include="Views\Graficos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Graficos.Designer.cs">
+    <Compile Include="Views\Graficos.Designer.cs">
       <DependentUpon>Graficos.cs</DependentUpon>
     </Compile>
-    <Compile Include="GraficosAnimales2.cs">
+    <Compile Include="Views\GraficosAdoptados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GraficosAnimales2.Designer.cs">
+    <Compile Include="Views\GraficosAdoptados.Designer.cs">
+      <DependentUpon>GraficosAdoptados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GraficosAnimales2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GraficosAnimales2.Designer.cs">
       <DependentUpon>GraficosAnimales2.cs</DependentUpon>
     </Compile>
-    <Compile Include="GraficosClientes.cs">
+    <Compile Include="Views\GraficosClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GraficosClientes.Designer.cs">
+    <Compile Include="Views\GraficosClientes.Designer.cs">
       <DependentUpon>GraficosClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="GraficosProductos.cs">
+    <Compile Include="Views\GraficosClientesEmail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GraficosProductos.Designer.cs">
+    <Compile Include="Views\GraficosClientesEmail.Designer.cs">
+      <DependentUpon>GraficosClientesEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GraficosClientesInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GraficosClientesInicial.Designer.cs">
+      <DependentUpon>GraficosClientesInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GraficosPrecioMedioCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GraficosPrecioMedioCategoria.Designer.cs">
+      <DependentUpon>GraficosPrecioMedioCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GraficosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GraficosProductos.Designer.cs">
       <DependentUpon>GraficosProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Index.cs">
+    <Compile Include="Views\GraficosProductosStockBajo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Index.Designer.cs">
+    <Compile Include="Views\GraficosProductosStockBajo.Designer.cs">
+      <DependentUpon>GraficosProductosStockBajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\XmlDataService.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="ViewAdopciones.cs">
+    <Compile Include="Views\ViewAdopciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewAdopciones.Designer.cs">
+    <Compile Include="Views\ViewAdopciones.Designer.cs">
       <DependentUpon>ViewAdopciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewAnimales.cs">
+    <Compile Include="Views\ViewAnimales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewAnimales.Designer.cs">
+    <Compile Include="Views\ViewAnimales.Designer.cs">
       <DependentUpon>ViewAnimales.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewClientes.cs">
+    <Compile Include="Views\ViewClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewClientes.Designer.cs">
+    <Compile Include="Views\ViewClientes.Designer.cs">
       <DependentUpon>ViewClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewProductos.cs">
+    <Compile Include="Views\ViewProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewProductos.Designer.cs">
+    <Compile Include="Views\ViewProductos.Designer.cs">
       <DependentUpon>ViewProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewProovedores.cs">
+    <Compile Include="Views\ViewProovedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewProovedores.Designer.cs">
+    <Compile Include="Views\ViewProovedores.Designer.cs">
       <DependentUpon>ViewProovedores.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GraficoAnimales.resx">
+    <EmbeddedResource Include="Views\GraficoAnimales.resx">
       <DependentUpon>GraficoAnimales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Graficos.resx">
+    <EmbeddedResource Include="Views\Graficos.resx">
       <DependentUpon>Graficos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GraficosAnimales2.resx">
+    <EmbeddedResource Include="Views\GraficosAdoptados.resx">
+      <DependentUpon>GraficosAdoptados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GraficosAnimales2.resx">
       <DependentUpon>GraficosAnimales2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GraficosClientes.resx">
+    <EmbeddedResource Include="Views\GraficosClientes.resx">
       <DependentUpon>GraficosClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GraficosProductos.resx">
+    <EmbeddedResource Include="Views\GraficosClientesEmail.resx">
+      <DependentUpon>GraficosClientesEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GraficosClientesInicial.resx">
+      <DependentUpon>GraficosClientesInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GraficosPrecioMedioCategoria.resx">
+      <DependentUpon>GraficosPrecioMedioCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GraficosProductos.resx">
       <DependentUpon>GraficosProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Index.resx">
+    <EmbeddedResource Include="Views\GraficosProductosStockBajo.resx">
+      <DependentUpon>GraficosProductosStockBajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -169,53 +214,53 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Content Include="Service\ReporGraficos1.rdlc">
+    <Content Include="Reports\ReporGraficos1.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Service\reportGraficosProductos.rdlc">
+    <Content Include="Reports\reportGraficosProductos.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Service\reporteGraficoClientes.rdlc">
+    <Content Include="Reports\reporteGraficoClientes.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Service\reporteGraficoAnimalEdad.rdlc">
+    <Content Include="Reports\reporteGraficoAnimalEdad.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Service\tablaProductosIndex.rdlc">
+    <EmbeddedResource Include="Reports\tablaProductosIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Service\tablaAnimalesIndex.rdlc">
+    <EmbeddedResource Include="Reports\tablaAnimalesIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Content Include=".Designer.gitignore" />
     <Content Include=".gitignore">
       <SubType>Form</SubType>
     </Content>
-    <EmbeddedResource Include="Service\tablaAdopcionIndex.rdlc">
+    <EmbeddedResource Include="Reports\tablaAdopcionIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Service\tablaClientesIndex.rdlc">
+    <EmbeddedResource Include="Reports\tablaClientesIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <Content Include="Service\tablaProovedores.rdlc">
+    <Content Include="Reports\tablaProovedores.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Service\tablaProovedoresProductos.rdlc">
+    <Content Include="Reports\tablaProovedoresProductos.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="ViewAdopciones.resx">
+    <EmbeddedResource Include="Views\ViewAdopciones.resx">
       <DependentUpon>ViewAdopciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewAnimales.resx">
+    <EmbeddedResource Include="Views\ViewAnimales.resx">
       <DependentUpon>ViewAnimales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewClientes.resx">
+    <EmbeddedResource Include="Views\ViewClientes.resx">
       <DependentUpon>ViewClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewProductos.resx">
+    <EmbeddedResource Include="Views\ViewProductos.resx">
       <DependentUpon>ViewProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewProovedores.resx">
+    <EmbeddedResource Include="Views\ViewProovedores.resx">
       <DependentUpon>ViewProovedores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -234,6 +279,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reports\reporteGraficoAdoptados.rdlc" />
+    <None Include="Reports\reporteGraficoClientesEmail.rdlc" />
+    <None Include="Reports\reporteGraficoClientesInicial.rdlc" />
+    <None Include="Reports\reporteGraficoPrecioMedioCategoria.rdlc" />
+    <None Include="Reports\reporteGraficoProductosStockBajo.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

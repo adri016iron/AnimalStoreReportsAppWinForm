@@ -49,6 +49,7 @@ namespace TiendaAnimales.Service
                     Id = LeerInt(p, "Id"),
                     Nombre = LeerString(p, "Nombre"),
                     Marca = LeerString(p, "Marca"),
+                    Categoria = LeerString(p, "Categoria"),
                     Precio = LeerDecimal(p, "Precio"),
                     Stock = LeerInt(p, "Stock"),
                     FechaCaducidad = LeerDateTimeNullable(p, "FechaCaducidad") ?? DateTime.MinValue,
