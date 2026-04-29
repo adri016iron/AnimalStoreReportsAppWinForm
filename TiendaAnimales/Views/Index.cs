@@ -214,5 +214,11 @@ namespace TiendaAnimales
             Graficos view = new Graficos();
             view.Show();
         }
+
+        private void btnTablasExtra_Click(object sender, EventArgs e)
+        {
+            ViewTablasExtra view = new ViewTablasExtra();
+            view.Show();
+        }
     }
 }

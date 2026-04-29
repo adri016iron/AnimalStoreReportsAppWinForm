@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelContenido = new System.Windows.Forms.Panel();
+            this.btnTablasExtra = new System.Windows.Forms.Button();
             this.btnProovedores = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.picMascotas = new System.Windows.Forms.PictureBox();
@@ -99,6 +100,7 @@
             // 
             // panelContenido
             // 
+            this.panelContenido.Controls.Add(this.btnTablasExtra);
             this.panelContenido.Controls.Add(this.btnProovedores);
             this.panelContenido.Controls.Add(this.btnSalir);
             this.panelContenido.Controls.Add(this.picMascotas);
@@ -115,6 +117,16 @@
             this.panelContenido.Size = new System.Drawing.Size(130, 615);
             this.panelContenido.TabIndex = 4;
             // 
+            // btnTablasExtra
+            // 
+            this.btnTablasExtra.Location = new System.Drawing.Point(16, 288);
+            this.btnTablasExtra.Name = "btnTablasExtra";
+            this.btnTablasExtra.Size = new System.Drawing.Size(103, 29);
+            this.btnTablasExtra.TabIndex = 12;
+            this.btnTablasExtra.Text = "📋 Tablas +";
+            this.btnTablasExtra.UseVisualStyleBackColor = true;
+            this.btnTablasExtra.Click += new System.EventHandler(this.btnTablasExtra_Click);
+            // 
             // btnProovedores
             // 
             this.btnProovedores.Location = new System.Drawing.Point(16, 253);
@@ -127,7 +139,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(16, 288);
+            this.btnSalir.Location = new System.Drawing.Point(16, 323);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(103, 29);
             this.btnSalir.TabIndex = 10;
@@ -409,6 +421,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelContenido;
+        private System.Windows.Forms.Button btnTablasExtra;
         private System.Windows.Forms.PictureBox picMascotas;
         private System.Windows.Forms.Button btnGraficos;
         private System.Windows.Forms.Button btnClientes;

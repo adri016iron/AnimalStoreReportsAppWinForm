@@ -68,6 +68,7 @@
     <Compile Include="Entity\Animal.cs" />
     <Compile Include="Entity\Cliente.cs" />
     <Compile Include="Entity\DatosTienda.cs" />
+    <Compile Include="Entity\GraficoResumen.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proovedor.cs" />
     <Compile Include="Entity\ProovedorProductoView.cs" />
@@ -171,6 +172,12 @@
     <Compile Include="Views\ViewProovedores.Designer.cs">
       <DependentUpon>ViewProovedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ViewTablasExtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ViewTablasExtra.Designer.cs">
+      <DependentUpon>ViewTablasExtra.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\GraficoAnimales.resx">
       <DependentUpon>GraficoAnimales.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +239,9 @@
     <EmbeddedResource Include="Reports\tablaAnimalesIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Content Include="Reports\tablaAnimalesPreparacion.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include=".Designer.gitignore" />
     <Content Include=".gitignore">
       <SubType>Form</SubType>
@@ -242,6 +252,9 @@
     <EmbeddedResource Include="Reports\tablaClientesIndex.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Content Include="Reports\tablaInventarioCategoria.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Reports\tablaProovedores.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -263,6 +276,9 @@
     <EmbeddedResource Include="Views\ViewProovedores.resx">
       <DependentUpon>ViewProovedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewTablasExtra.resx">
+      <DependentUpon>ViewTablasExtra.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\TiendaAnimales.Entity.Adopcion.datasource" />
     <None Include="Properties\DataSources\TiendaAnimales.Entity.Animal.datasource" />
@@ -279,11 +295,21 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Reports\reporteGraficoAdoptados.rdlc" />
-    <None Include="Reports\reporteGraficoClientesEmail.rdlc" />
-    <None Include="Reports\reporteGraficoClientesInicial.rdlc" />
-    <None Include="Reports\reporteGraficoPrecioMedioCategoria.rdlc" />
-    <None Include="Reports\reporteGraficoProductosStockBajo.rdlc" />
+    <Content Include="Reports\reporteGraficoAdoptados.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\reporteGraficoClientesEmail.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\reporteGraficoClientesInicial.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\reporteGraficoPrecioMedioCategoria.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\reporteGraficoProductosStockBajo.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

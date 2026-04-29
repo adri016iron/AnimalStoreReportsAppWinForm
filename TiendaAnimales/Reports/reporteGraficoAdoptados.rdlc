@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -24,7 +24,8 @@
         <Field Name="Cantidad">
           <DataField>Cantidad</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>      </Fields>
+        </Field>
+      </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>TiendaAnimales.Entity</rd:DataSetName>
         <rd:TableName>GraficoResumen</rd:TableName>
@@ -403,38 +404,70 @@
         <Style />
       </Body>
       <Width>6.5in</Width>
-        <PageFooter>
-          <Height>0.6cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="TextboxPagina">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="Página " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>0.1cm</Top>
-              <Left>0cm</Left>
-              <Height>0.4cm</Height>
-              <Width>16.5cm</Width>
-              <Style />
-            </Textbox>
-          </ReportItems>
-          <Style />
-        </PageFooter>      <Page>
+      <PageFooter>
+        <Height>0.6cm</Height>
+        <PrintOnFirstPage>true</PrintOnFirstPage>
+        <PrintOnLastPage>true</PrintOnLastPage>
+        <ReportItems>
+          <Textbox Name="TextboxPagina">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="Página " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.1cm</Top>
+            <Left>0cm</Left>
+            <Height>0.4cm</Height>
+            <Width>16.5cm</Width>
+            <Style />
+          </Textbox>
+        </ReportItems>
+        <Style />
+      </PageFooter>
+      <PageHeader>
+        <Height>0.9cm</Height>
+        <PrintOnFirstPage>true</PrintOnFirstPage>
+        <PrintOnLastPage>true</PrintOnLastPage>
+        <ReportItems>
+          <Textbox Name="TituloInforme">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>reporteGraficoAdoptados</Value>
+                    <Style>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.1cm</Top>
+            <Left>0cm</Left>
+            <Height>0.6cm</Height>
+            <Width>6.5in</Width>
+            <Style />
+          </Textbox>
+        </ReportItems>
+        <Style />
+      </PageHeader>
+      <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>
