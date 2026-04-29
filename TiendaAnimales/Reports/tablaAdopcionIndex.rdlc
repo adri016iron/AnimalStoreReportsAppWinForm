@@ -433,70 +433,70 @@
     <Style />
   </Body>
   <Width>6.5in</Width>
-  <PageHeader>
-    <Height>0.9cm</Height>
-    <PrintOnFirstPage>true</PrintOnFirstPage>
-    <PrintOnLastPage>true</PrintOnLastPage>
-    <ReportItems>
-      <Textbox Name="TituloInforme">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Listado de adopciones</Value>
-                <Style>
-                  <FontSize>14pt</FontSize>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <Top>0.1cm</Top>
-        <Left>0cm</Left>
-        <Height>0.6cm</Height>
-        <Width>6.5in</Width>
-        <Style />
-      </Textbox>
-    </ReportItems>
-    <Style />
-  </PageHeader>
-  <PageFooter>
-    <Height>0.6cm</Height>
-    <PrintOnFirstPage>true</PrintOnFirstPage>
-    <PrintOnLastPage>true</PrintOnLastPage>
-    <ReportItems>
-      <Textbox Name="NumeroPagina">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>="Página " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Right</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <Top>0.1cm</Top>
-        <Left>0cm</Left>
-        <Height>0.4cm</Height>
-        <Width>6.5in</Width>
-        <Style />
-      </Textbox>
-    </ReportItems>
-    <Style />
-  </PageFooter>
   <Page>
+    <PageHeader>
+      <Height>0.9cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="TituloInforme">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Listado de adopciones</Value>
+                  <Style>
+                    <FontSize>14pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.1cm</Top>
+          <Left>0cm</Left>
+          <Height>0.6cm</Height>
+          <Width>6.5in</Width>
+          <Style />
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageHeader>
+    <PageFooter>
+      <Height>0.6cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="NumeroPagina">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Página " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.1cm</Top>
+          <Left>0cm</Left>
+          <Height>0.4cm</Height>
+          <Width>6.5in</Width>
+          <Style />
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageFooter>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
     <LeftMargin>2cm</LeftMargin>
